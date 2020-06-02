@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-image-cropper": [
+        "dist/ngx-image-cropper/ngx-image-cropper",
+        "dist/ngx-image-cropper"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

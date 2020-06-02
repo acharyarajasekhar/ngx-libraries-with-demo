@@ -1,0 +1,20 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button color="danger" (click)="cancel()">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-button color="secondary" (click)="ok()">
+                <ion-icon slot="start" name="checkmark-done-outline"></ion-icon> Ok
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <angular-cropper style="width: 100%; text-align: center; margin: auto;" #angularCropper
+        [cropperOptions]="cropperOptions" [imageUrl]="sourceImage" *ngIf="sourceImage">
+    </angular-cropper>
+</ion-content>
